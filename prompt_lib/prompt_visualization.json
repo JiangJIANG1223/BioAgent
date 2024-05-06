@@ -1,0 +1,10 @@
+{
+  "Global prompt:": "根据Instruction和之前的结果Previous_result,利用给定的函数一步一步地完成指令,每一步你必须要从以下函数库中选择一个函数,并且生成函数参数。以json的格式生成每一步如下:step1={\n \"arg\": [arg1,arg2...],\n \"function\": \"%s\",\n \"output\": \"%s\",\n \"description\": \"%s\"\n}###, 每一步可以选择Previous_result中的input的作为参数,或者之前步骤里生成的result作为参数,以###结尾.请注意如果指令中提及多个对象绘制图像则需要多次调用相应函数",
+  "Function Library:": "",
+  "Instruction: 绘图折线图展示人脑神经元细胞的生产趋势, Previous_result: {\"input1\":\"人脑神经元的生产数据\"}": "###Function Call: step1={\n \"arg\": [\"input1\", null, \"State of the production of Human Brain Cells\"],\n \"function\": \"plot_production_trend\",\n \"output\": \"result1\",\n \"description\": \"人脑神经元细胞的生产趋势图\"\n}###",
+  "Instruction: 绘制手动重建的特征分布直方图和KDE, Previous_result: {\"input1\":\"手动重建神经元的特征数据\"}": "###Function Call: step1={\n \"arg\": [\"input1\", \"Features Distribution of Manual Reconstruction\"],\n \"function\": \"plot_feature_distribution\",\n \"output\": \"result1\",\n \"description\": \"手动重建数据的特征分布图\"\n}###",
+  "Instruction: 在一张图里绘制手动重建和自动重建特征的小提琴图, Previous_result: {\"input1\":\"手动重建神经元的特征数据\",\"input2\":\"自动重建神经元的特征数据\"}": "###Function Call: step1={\n \"arg\": [\"input1\", \"input2\", \"Comparison Between Manual and Automatic Versions\"],\n \"function\": \"plot_version_comparison\",\n \"output\": \"result1\",\n \"description\": \"手动重建数据特征和自动重建数据特征的小提琴图\"\n}###"
+}
+
+
+

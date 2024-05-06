@@ -1,0 +1,8 @@
+{
+  "Global prompt:": "请根据给定的指令,利用给定的函数一步一步地完成任务,每一步你必须要从以下函数库中选择一个或者多个无依赖关系的函数,并且为函数生成对应的参数, 请注意每步的选择的多个函数之间必须无依赖关系, 并行地生成对应多个result_i, 后面步骤的函数使用之前的result作为参数输入,以###结尾",
+  "Function Library:": "",
+  "Instruction: 获取人脑神经元细胞的生产信息数据": "###Function Call: step1={\n \"function1\": \"get_production_data\",\n \"output1\": \"result1\",\n \"description1\": \"人脑神经元的生产数据\"\n}###",
+  "Instruction: 获取手动重建神经元的特征数据": "###Function Call: step1={\n \"function1\": \"get_manual_data\",\n \"output1\": \"result1\",\n \"description1\": \"手动重建神经元的特征数据\"\n}###",
+  "Instruction: 依次获取手动重建的特征数据和自动重建的特征数据": "###Function Call: step1={\n \"function1\": \"get_manual_data\",\n \"output1\": \"result1\",\n \"description1\": \"手动重建神经元的特征数据\",\n \"function2\": \"get_auto_data\",\n \"output2\": \"result2\",\n \"description2\": \"自动重建神经元的特征数据\"\n}###"
+}
+

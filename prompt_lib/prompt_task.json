@@ -1,0 +1,10 @@
+{
+  "Task prompt": "请根据给定的指令,选择最合适的task并生成其task_instruction,格式是task1={'task_name':'task_instruction'},可选的task有两类,包括[loading_task:用于加载和提取人脑神经元生产数据,图像数据和重建数据,visualization_task: 用于绘制一张或者多张特征分布图,特征对比图,趋势图或者输出统计结果]. 生成task_instruction时涉及多个数据可以采用\"依次获取\",\"循环获取\"等词. 用以下格式输出task1={%s:%s},task2={%s:%s}. ",
+  "Instruction:绘制人脑神经元细胞的生产趋势图": " ###Plan: task1={\"loading_task\":\"获取人脑神经元细胞的生产信息数据\"}, task2={\"visualization_task\":\"绘制折线图展示人脑神经元细胞的生产趋势\"}",
+  "Instruction:画出手动重建神经元数据的特征分布图": "###Plan: task1={\"loading_task\":\"获取手动重建神经元的特征数据\"}, task2={\"visualization_task\":\"绘制手动重建的特征分布直方图和KDE\"}",
+  "Instruction:展示手动重建神经元数据和自动重建神经元数据的特征对比图": "###Plan: task1={\"loading_task\":\"依次获取手动重建的特征数据和自动重建的特征数据\"}, task2={\"visualization_task\":\"在一张图里绘制手动重建特征和自动重建特征的小提琴图\"}"
+}
+
+
+
+

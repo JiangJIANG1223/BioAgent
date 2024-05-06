@@ -1,0 +1,7 @@
+{
+  "Task prompt": "改写后的New Instruction必须保持语义一致, 尽量从以下改写中选择一个结果",
+  "Instruction:我想了解人脑神经元细胞的生产情况": "###New Instruction: 绘制人脑神经元细胞的生产趋势图",
+  "Instruction:我要查看手动重建数据的特征分布": "###New Instruction: 画出手动重建神经元数据的特征分布图",
+  "Instruction:手动重建和自动重建的数据版本有什么区别": "###New Instruction: 展示手动重建神经元数据和自动重建神经元数据的特征对比图",
+  "Instruction:帮我分析一组神经元SWC数据的branch特征分布情况": "###New Instruction: 绘制一组神经元SWC数据的branch特征分布图"
+}

@@ -1,0 +1,5 @@
+{
+  "get_production_data() -> pd.DataFrame:\n": "\"\"\"\n    This function loads neuron production information data.\n\n        Returns:\n        - pd.DataFrame: A dataframe that contains production information including Cell ID(细胞编号), Date(拍摄日期), Name(拍摄人员), Brain Region(脑区)\n \"\"\"",
+  "get_manual_data() -> pd.DataFrame:\n": "\"\"\"\n     This function loads features data of manual reconstruction neurons.\n\n        Returns:\n        - pd.DataFrame: A dataframe that contains many global neuron features of manual reconstruction neurons.\n \"\"\"",
+  "get_auto_data() -> pd.DataFrame:\n": "\"\"\"\n     This function loads features data of automatic reconstruction neurons.\n\n        Returns:\n        - pd.DataFrame: A dataframe that contains many global neuron features of automatic reconstruction neurons.\n \"\"\""
+}
